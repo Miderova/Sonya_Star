@@ -1,0 +1,6 @@
+@use '1_peremen' as p;
+@use'3_importer' as i;
+
+body{
+    background-color:p.$blue-color;
+}

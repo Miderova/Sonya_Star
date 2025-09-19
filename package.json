@@ -1,0 +1,27 @@
+{
+  "name": "sonya-syper-star",
+  "version": "1.0.0",
+  "description": "Sonya Star Dog",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miderova/Sonya_Star.git"
+  },
+  "author": "Vika Miderova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miderova/Sonya_Star/issues"
+  },
+  "homepage": "https://github.com/Miderova/Sonya_Star#readme",
+  "dependencies": {
+    "parcel": "^2.16.0"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.92.1"
+  },
+  "keywords": []
+}
