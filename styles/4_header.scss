@@ -44,12 +44,10 @@
         }
 
         &__links {
-            // позволило раскинуть весь контент по сторонам
             flex-grow: 1;
 
             .list {
                 @include m.d-flex(start, center, nowrap, row, min(100px, 5vh), 0);
-                // отступы в стороны тоже смотри в фигме
                 padding: 0 0 0 min(100px, 5vh);
 
                 &__item {
@@ -63,7 +61,6 @@
                 }
             }
 
-            // Прописываем медиа запрос, чтобы поменять гэпчик
             @media(max-width: p.$media_2) {
                 .list__item-link {
                     padding-right: 20px;
