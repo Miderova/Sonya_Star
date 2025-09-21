@@ -1,10 +1,12 @@
 {
-  "name": "sonya-syper-star",
+  "name": "sonya-super-star",
   "version": "1.0.0",
   "description": "Sonya Star Dog",
   "source": "index.html",
   "scripts": {
-    "sass:watch": "sass --style=expanded --watch styles:dist"
+    "sass:watch": "sass --style=expanded --watch styles:dist",
+    "parcel:watch": "parcel serve index.html --dist-dir public",
+    "parcel:build": "parcel build index.html --dist-dir build --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,6 @@
   "dependencies": {
     "parcel": "^2.16.0"
   },
-  "main": "index.js",
   "devDependencies": {
     "sass": "^1.92.1"
   },

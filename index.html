@@ -17,10 +17,37 @@
 </head>
 
 <body>
-    уфпукыыва
-    <svg>
-        <use href="img/sprites.svg#dog-icon"/>
-    </svg>
+    <header class="header" aria-label="header">
+        <div class="container">
+            <nav class="header__nav nav" aria-label="header navigation">
+                <div class="nav__title">
+                    <a href="#" class="nav__title-link">SONYA <span>STAR</span></a>
+                </div>
+
+                <div class="nav__links">
+                    <ul class="nav__links-list list" aria-label="navigation list">
+                        <li class="list__item" aria-label="first link">
+                            <a href="#" class="list__item-link">about us</a>
+                        </li>
+                        <li class="list__item" aria-label="second link">
+                            <a href="#" class="list__item-link">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__beagle-wrapper beagle">
+                    <a href="#" class="beagle__link" aria-label="about the beagle">ABOUT THE BEAGLE</a>
+                </div>
+                
+                <div class="nav__beagle-wrapper dog">
+                    <a href="#" class="dog__link" aria-label="dog info">
+                        <svg class="dog__link-icon">
+                            <use href="img/sprites.svg#dog-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
 </body>
 
 </html>

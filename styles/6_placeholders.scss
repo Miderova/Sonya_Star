@@ -1,0 +1,14 @@
+@use '1_peremen' as p;
+
+%hover-black {
+    &:hover {
+        cursor: pointer;
+        color: p.$black-color;
+    }
+}
+%hover-black-icon {
+    &:hover {
+        cursor: pointer;
+        color: p.$black-color;
+    }
+}
