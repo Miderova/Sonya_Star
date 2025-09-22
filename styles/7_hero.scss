@@ -1,0 +1,107 @@
+@use '1_peremen' as p;
+@use '5_mixins' as m;
+@use '6_placeholders' as pl;
+@use 'sass:color';
+
+.hero {
+    position: relative;
+    max-width: 1260px;
+    height: 830px;
+    margin: 0 auto;
+    padding: 140px 0 0 0;
+    background: url('../img/photo/облако1.png') center/contain no-repeat;
+
+    &__content {
+        position: relative;
+        width: 930px;
+        margin: 0 auto;
+
+        .hero__title {
+            @include m.font(120px, 700, p.$black-color );
+            line-height: 1;
+        }
+
+        .hero__action-btn {
+            width: 380px;
+            height: 80px;
+            background-color: p.$black-color;
+            border-radius: 45px;
+            border: none;
+            cursor: pointer;
+            @include m.font(28px, 500, p.$white-color );
+            @include m.position(absolute, 1, -1, bottom, right, 15px);
+
+            &:hover {
+                background-color: color.adjust(p.$black-color, $alpha: -0.35);
+            }
+
+            &:focus {
+                outline: none
+            }
+
+            &:focus-visible {
+                outline: 2px solid p.$white-color;
+            }
+        }
+    }
+
+    &__notify {
+        position: relative;
+        margin: 170px auto 0;
+        width: 680px;
+        height: 60px;
+        background-color: color.adjust(p.$white-color, $alpha: -0.80);
+        border-radius: 20px;
+        @include m.d-flex(end, center, nowrap, row, 10px);
+
+        &-img {
+            @include m.position(absolute, 1, -1, top, left, -152px, -167px);
+        }
+
+        .hero_notify-content {
+            width: 540px;
+            height: 100%;
+            @include m.font(16px, 500, p.$black-color );
+            @include m.d-flex(center, center, nowrap, );
+            border-right: 1px solid p.$white-color;
+        }
+
+        &-btn {
+            width: 140px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            @include m.font(25px, 500, p.$black-color );
+            @extend %hover-white;
+
+            &:focus {
+                outline: none
+            }
+
+            &:focus-visible {
+                outline: 2px solid p.$white-color;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .hero_scroll {
+        @include m.position(absolute, 1, -1, bottom, left, 200px, 10px);
+    }
+
+    .hero__scroll-content {
+        position: relative;
+        @include m.font(16px, 600, p.$white-color );
+        writing-mode: vertical-lr;
+        cursor: pointer;
+
+        &::after {
+            @include m.position(absolute, 1, -1, top, left, 100px, 10px);
+            display: block;
+            content: "";
+            width: 1px;
+            height: 75px;
+            background-color: p.$white-color;
+        }
+    }
+}

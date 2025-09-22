@@ -1,5 +1,6 @@
 @use '1_peremen' as p;
 @use'3_importer' as i;
+@use'7_hero' as h;
 
 body{
     background-color:p.$blue-color;

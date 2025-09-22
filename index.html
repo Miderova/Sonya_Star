@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Sonya Super Star</title>
-    <link rel="icon" href="img/icon_dog.svg" type="image/svg">
-    <link rel="stylesheet" href="dist/index.css">
+    <link rel="icon" href="img/icon_dog.svg" type="image/svg" />
+    <link rel="stylesheet" href="dist/index.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header" aria-label="header">
-        <div class="container">
-            <nav class="header__nav nav" aria-label="header navigation">
-                <div class="nav__title">
-                    <a href="#" class="nav__title-link">SONYA <span>STAR</span></a>
-                </div>
+      <div class="container">
+        <nav class="header__nav nav" aria-label="header navigation">
+          <div class="nav__title">
+            <a href="#" class="nav__title-link">SONYA <span>STAR</span></a>
+          </div>
 
-                <div class="nav__links">
-                    <ul class="nav__links-list list" aria-label="navigation list">
-                        <li class="list__item" aria-label="first link">
-                            <a href="#" class="list__item-link">about us</a>
-                        </li>
-                        <li class="list__item" aria-label="second link">
-                            <a href="#" class="list__item-link">contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__beagle-wrapper beagle">
-                    <a href="#" class="beagle__link" aria-label="about the beagle">ABOUT THE BEAGLE</a>
-                </div>
-                
-                <div class="nav__beagle-wrapper dog">
-                    <a href="#" class="dog__link" aria-label="dog info">
-                        <svg class="dog__link-icon">
-                            <use href="img/sprites.svg#dog-icon"></use>
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-        </div>
+          <div class="nav__links">
+            <ul class="nav__links-list list" aria-label="navigation list">
+              <li class="list__item" aria-label="first link">
+                <a href="#" class="list__item-link">about us</a>
+              </li>
+              <li class="list__item" aria-label="second link">
+                <a href="#" class="list__item-link">contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__beagle-wrapper beagle">
+            <a href="#" class="beagle__link" aria-label="about the beagle"
+              >ABOUT THE BEAGLE</a
+            >
+          </div>
+
+          <div class="nav__beagle-wrapper dog">
+            <a href="#" class="dog__link" aria-label="dog info">
+              <svg class="dog__link-icon">
+                <use href="img/sprites.svg#dog-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
-</body>
 
+    <main aria-label="main content">
+      <section class="hero-section" aria-label="hero section">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__content">
+              <h1 class="hero__title">THE MOST MAGNIFICENT MIRACLE</h1>
+              <button class="hero__action-btn">LET'S GET ACQUAINTED</button>
+            </div>
+            <div class="hero__notify">
+              <img
+                src="img/photo/Sonya(accept).webp"
+                alt="Sonya"
+                class="hero__notify-img"
+              />
+              <p class="hero_notify-content">
+                THIS SITE USES SONYA (A BEAGLE) FOR HAPPINESS.<br>YOUR PRESENCE
+                IMPLIES YOU LOVE HER. IT'S IRREFUTABLE.
+              </p>
+              <button class="hero__notify-btn">ACCEPT</button>
+            </div>
+            <div class="hero_scroll">
+                <span class="hero__scroll-content">Scroll down</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
