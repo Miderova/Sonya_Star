@@ -85,6 +85,24 @@
                 font-size: 16px;
                 @extend %hover-black;
             }
+
+        }
+
+        @media (max-width: p.$media_4) {
+            .beagle__link {
+                font-size: 14px;
+            }
+            .nav__title-link {
+              font-size: 20px;  
+            }
+        }
+        @media (max-width: p.$media_5) {
+            .beagle__link {
+                font-size: 10px;
+            }
+            .nav__title-link {
+              font-size: 15px;  
+            }
         }
 
         .dog {
