@@ -1,220 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sonya Super Star</title>
-    <link rel="icon" href="img/icon_dog.svg" type="image/svg" />
-    <link rel="stylesheet" href="dist/index.css" />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header class="header" aria-label="header">
+  <title>Sonya Super Star</title>
+  <link rel="icon" href="img/icon_dog.svg" type="image/svg" />
+  <link rel="stylesheet" href="dist/index.css" />
+</head>
+
+<body>
+  <header class="header" aria-label="header">
+    <div class="container">
+      <nav class="header__nav nav" aria-label="header navigation">
+        <div class="nav__title">
+          <a href="#" class="nav__title-link">SONYA <span>STAR</span></a>
+        </div>
+
+        <div class="nav__links">
+          <ul class="nav__links-list list" aria-label="navigation list">
+            <li class="list__item" aria-label="first link">
+              <a href="#" class="list__item-link">about us</a>
+            </li>
+            <li class="list__item" aria-label="second link">
+              <a href="#" class="list__item-link">contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__beagle-wrapper beagle">
+          <a href="#" class="beagle__link" aria-label="about the beagle">ABOUT THE BEAGLE</a>
+        </div>
+
+        <div class="nav__beagle-wrapper dog">
+          <a href="#" class="dog__link" aria-label="dog info">
+            <svg class="dog__link-icon">
+              <use href="img/sprites.svg#dog-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main aria-label="main content">
+    <section class="hero-section" aria-label="hero section">
       <div class="container">
-        <nav class="header__nav nav" aria-label="header navigation">
-          <div class="nav__title">
-            <a href="#" class="nav__title-link">SONYA <span>STAR</span></a>
+        <div class="hero">
+          <div class="hero__content">
+            <h1 class="hero__title">THE MOST MAGNIFICENT MIRACLE</h1>
+            <button class="hero__action-btn">LET'S GET ACQUAINTED</button>
           </div>
-
-          <div class="nav__links">
-            <ul class="nav__links-list list" aria-label="navigation list">
-              <li class="list__item" aria-label="first link">
-                <a href="#" class="list__item-link">about us</a>
-              </li>
-              <li class="list__item" aria-label="second link">
-                <a href="#" class="list__item-link">contact</a>
-              </li>
-            </ul>
+          <div class="hero__notify">
+            <img src="img/photo/Sonya(accept).webp" alt="Sonya" class="hero__notify-img" />
+            <p class="hero_notify-content">
+              THIS SITE USES SONYA (A BEAGLE) FOR HAPPINESS.<br />YOUR
+              PRESENCE IMPLIES YOU LOVE HER. IT'S IRREFUTABLE.
+            </p>
+            <button class="hero__notify-btn">ACCEPT</button>
           </div>
-          <div class="nav__beagle-wrapper beagle">
-            <a href="#" class="beagle__link" aria-label="about the beagle"
-              >ABOUT THE BEAGLE</a
-            >
+          <div class="hero_scroll">
+            <span class="hero__scroll-content">Scroll down</span>
           </div>
-
-          <div class="nav__beagle-wrapper dog">
-            <a href="#" class="dog__link" aria-label="dog info">
-              <svg class="dog__link-icon">
-                <use href="img/sprites.svg#dog-icon"></use>
-              </svg>
-            </a>
-          </div>
-        </nav>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main aria-label="main content">
-      <section class="hero-section" aria-label="hero section">
-        <div class="container">
-          <div class="hero">
-            <div class="hero__content">
-              <h1 class="hero__title">THE MOST MAGNIFICENT MIRACLE</h1>
-              <button class="hero__action-btn">LET'S GET ACQUAINTED</button>
-            </div>
-            <div class="hero__notify">
-              <img
-                src="img/photo/Sonya(accept).webp"
-                alt="Sonya"
-                class="hero__notify-img"
-              />
-              <p class="hero_notify-content">
-                THIS SITE USES SONYA (A BEAGLE) FOR HAPPINESS.<br />YOUR
-                PRESENCE IMPLIES YOU LOVE HER. IT'S IRREFUTABLE.
+    <section class="work-section">
+      <div class="container">
+        <div class="work">
+          <h2 class="work-section__title">Important to know</h2>
+
+          <div class="work__cards-wrapper">
+            <figure class="info-card card--Feed" aria-label="card analysis">
+              <svg class="info-card__icon Feed--icon" aria-label="Feed--icon">
+                <use href="img/sprites.svg#Feed-icon"></use>
+              </svg>
+              <h3 class="info-card__title">Feed</h3>
+              <p class="info-card_desc">
+                Sonya decides for herself what she will eat.
               </p>
-              <button class="hero__notify-btn">ACCEPT</button>
-            </div>
-            <div class="hero_scroll">
-              <span class="hero__scroll-content">Scroll down</span>
-            </div>
+            </figure>
+
+            <figure class="info-card Stroll--card" aria-label="card analysis">
+              <svg class="info-card__icon Stroll--icon" aria-label="Stroll--icon">
+                <use href="img/sprites.svg#Stroll-icon"></use>
+              </svg>
+              <h3 class="info-card__title">Stroll</h3>
+              <p class="info-card_desc">
+                Sonechka should walk at least 3 times a day
+              </p>
+            </figure>
+
+            <figure class="info-card card--Peculiarities" aria-label="card analysis">
+              <svg class="info-card__icon Peculiarities--icon" aria-label="Peculiarities--icon">
+                <use href="img/sprites.svg#Peculiarities-icon"></use>
+              </svg>
+              <h3 class="info-card__title">Peculiarities</h3>
+              <p class="info-card_desc">Sonya is initially shy.</p>
+            </figure>
+
+            <figure class="info-card card--Genesis" aria-label="card analysis">
+              <svg class="info-card__icon Genesis--icon" aria-label="Genesis--icon">
+                <use href="img/sprites.svg#Genesis-icon"></use>
+              </svg>
+              <h3 class="info-card__title">Genesis</h3>
+              <p class="info-card_desc">
+                Bred from English hounds for tracking small game.
+              </p>
+            </figure>
+
+            <figure class="info-card card--color" aria-label="card analysis">
+              <svg class="info-card__icon color--icon" aria-label="color--icon">
+                <use href="img/sprites.svg#color-icon"></use>
+              </svg>
+              <h3 class="info-card__title">Сolor</h3>
+              <p class="info-card_desc">White, <br />black,<br />tricolor</p>
+            </figure>
+
+            <figure class="info-card card--Dimensions" aria-label="card analysis">
+              <svg class="info-card__icon Dimensions--icon" aria-label="Dimensions--icon">
+                <use href="img/sprites.svg#Dimensions-icon"></use>
+              </svg>
+              <h3 class="info-card__title">Dimensions</h3>
+              <p class="info-card_desc">
+                A medium-sized hound built for stamina and endless adventure.
+              </p>
+            </figure>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="work-section">
-        <div class="container">
-          <div class="work">
-            <h2 class="work-section__title">Important to know</h2>
+    <hr class="divieder" />
 
-            <div class="work__cards-wrapper">
-              <!-- 1 иконка -->
-              <figure class="info-card card--Feed" aria-label="card analysis">
-                <svg class="info-card__icon Feed--icon" aria-label="Feed--icon">
-                  <use href="img/sprites.svg#Feed-icon"></use>
-                </svg>
-                <h3 class="info-card__title">Feed</h3>
-                <p class="info-card_desc">
-                  Sonya decides for herself what she will eat.
-                </p>
-              </figure>
+    <section class="about-section">
+      <div class="container">
+        <div class="about">
+          <div class="about__Sonechka">
+            <h3 class="about__Sonechka-title">Sonechka</h3>
+            <p class="about__Sonechka-desc">
+              She is my dearest friend and the biggest joy in my life. <br />
+              Her love and warmth make every day brighter. <br />
+              I truly treasure her as my beloved dog”
+            </p>
+          </div>
 
-              <!-- 2 иконка -->
-              <figure class="info-card Stroll--card" aria-label="card analysis">
-                <svg
-                  class="info-card__icon Stroll--icon"
-                  aria-label="Stroll--icon"
-                >
-                  <use href="img/sprites.svg#Stroll-icon"></use>
-                </svg>
-                <h3 class="info-card__title">Stroll</h3>
-                <p class="info-card_desc">
-                  Sonechka should walk at least 3 times a day
-                </p>
-              </figure>
+          <div class="about__sports">
+            <h3 class="about__sports-title">A sports dog</h3>
+            <p class="about__sports-desc">
+              Sonya is a real athlete in her own way. <br />
+              She runs fast only when food is waiting. <br />
+              Training for her means sleeping after dinner.
+            </p>
+          </div>
 
-              <!-- 3 иконка -->
-              <figure
-                class="info-card card--Peculiarities"
-                aria-label="card analysis"
-              >
-                <svg
-                  class="info-card__icon Peculiarities--icon"
-                  aria-label="Peculiarities--icon"
-                >
-                  <use href="img/sprites.svg#Peculiarities-icon"></use>
-                </svg>
-                <h3 class="info-card__title">Peculiarities</h3>
-                <p class="info-card_desc">Sonya is initially shy.</p>
-              </figure>
-
-              <!-- 4 иконка -->
-              <figure
-                class="info-card card--Genesis"
-                aria-label="card analysis"
-              >
-                <svg
-                  class="info-card__icon Genesis--icon"
-                  aria-label="Genesis--icon"
-                >
-                  <use href="img/sprites.svg#Genesis-icon"></use>
-                </svg>
-                <h3 class="info-card__title">Genesis</h3>
-                <p class="info-card_desc">
-                  Bred from English hounds for tracking small game.
-                </p>
-              </figure>
-
-              <!-- 5 иконка -->
-              <figure class="info-card card--color" aria-label="card analysis">
-                <svg
-                  class="info-card__icon color--icon"
-                  aria-label="color--icon"
-                >
-                  <use href="img/sprites.svg#color-icon"></use>
-                </svg>
-                <h3 class="info-card__title">Сolor</h3>
-                <p class="info-card_desc">White, <br />black,<br />tricolor</p>
-              </figure>
-
-              <!-- 6 иконка -->
-              <figure
-                class="info-card card--Dimensions"
-                aria-label="card analysis"
-              >
-                <svg
-                  class="info-card__icon Dimensions--icon"
-                  aria-label="Dimensions--icon"
-                >
-                  <use href="img/sprites.svg#Dimensions-icon"></use>
-                </svg>
-                <h3 class="info-card__title">Dimensions</h3>
-                <p class="info-card_desc">
-                  A medium-sized hound built for stamina and endless adventure.
-                </p>
-              </figure>
-            </div>
+          <div class="about__Funny">
+            <h3 class="about__Funny-title">Funny situation</h3>
+            <p class="about__Funny-desc">
+              Sonya loves to eat flowers, <br />so her mother constantly
+              scolded her for it, <br />
+              and Sonya was offended and sat sad.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <hr />
 
-      <!-- Независимая линия 1 basic-->
+    <!-- 1_Начало хайпа -->
+    <section class="morecontent-section" aria-label="More content">
+      <div class="container">
+        <div class="morecontent">
+          <h2 class="morecontent__title">More content</h2>
+          <!-- делаем карточки -->
+          <div class="morecontent__cards-wrapper">
+            <figure class="img-card">
+              <h3 class="img-card__title">Sonya and the dream</h3>
+              <img src="img/photo/Sonya (mini1).webp" alt="Sonya_sleep" class="img-card__preview" />
+              <button class="img-card__btn">
+                <svg class="img-card__btn__icon" aria-label="arrow--icon">
+                  <use href="img/sprites.svg#arrow-icon"></use>
+                </svg>
+              </button>
+            </figure>
 
-      <hr class="divieder" />
+            <!-- 2 карточка -->
+            <figure class="img-card">
+              <h3 class="img-card__title">
+                <span>Sonya and her</span>
+                <span>beloved snow</span></h3>
+              <img src="img/photo/Sonya(mini2).webp" alt="Sonya_sleep" class="img-card__preview" />
+              <button class="img-card__btn">
+                <svg class="img-card__btn__icon" aria-label="arrow--icon">
+                  <use href="img/sprites.svg#arrow-icon"></use>
+                </svg>
+              </button>
+            </figure>
 
-      <!-- Создаем новую секцию 3 -->
-      <section class="about-section">
-        <div class="container">
-          <div class="about">
-            <div class="about__Sonechka">
-              <h3 class="about__Sonechka-title">Sonechka</h3>
-              <p class="about__Sonechka-desc">
-                She is my dearest friend and the biggest joy in my life. <br />
-                Her love and warmth make every day brighter. <br />
-                I truly treasure her as my beloved dog”
-              </p>
-            </div>
+            <!-- 3 карточка -->
 
-            <!-- Копипастим 8(?) -->
-
-            <div class="about__sports">
-              <h3 class="about__sports-title">A sports dog</h3>
-              <p class="about__sports-desc">
-                Sonya is a real athlete in her own way. <br />
-                She runs fast only when food is waiting. <br />
-                Training for her means sleeping after dinner.
-              </p>
-            </div>
-
-            <!-- 3 блок с сонечкой сладкой -->
-
-            <div class="about__Funny">
-              <h3 class="about__Funny-title">Funny situation</h3>
-              <p class="about__Funny-desc">
-                Sonya loves to eat flowers, <br>so her mother constantly scolded her
-                for it, <br> and Sonya was offended and sat sad.
-              </p>
-            </div>
+            <figure class="img-card">
+              <h3 class="img-card__title">A little miracle sonya</h3>
+              <img src="img/photo/Sonya(mini3).webp" alt="Sonya_sleep" class="img-card__preview" />
+              <button class="img-card__btn">
+                <svg class="img-card__btn__icon" aria-label="arrow--icon">
+                  <use href="img/sprites.svg#arrow-icon"></use>
+                </svg>
+              </button>
+            </figure>
           </div>
         </div>
-      </section>
-      <hr>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
