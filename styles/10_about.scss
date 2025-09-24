@@ -1,10 +1,8 @@
-// добавляем импорты 4
 @use '1_peremen' as p;
 @use'5_mixins' as m;
 
 .about__Sonechka-title {
 
-    // пишем некст 5
 
     .about {
         margin: 0 auto;
@@ -12,7 +10,6 @@
     }
 }
 
-// крч у него возможно неправильно вложенно все, поэтому мы пишем так, потому что иначе у нас не работает 6
 
 .about__Sonechka {
     width: 100%;
@@ -40,7 +37,7 @@
     }
 }
 
-// 7 оформляем дальше главный текст 
+
 .about__Sonechka-title {
     @include m.font(45px, 400, p.$white-color);
 
@@ -49,7 +46,7 @@
     }
 }
 
-// 8 оформление p 
+
 
 .about__Sonechka-desc {
     margin: 10px 0 0 0;
@@ -66,7 +63,7 @@
     }
 }
 
-// НЕКСТ БЛОК с соней <33
+
 
 .about__sports {
     text-align: right;
@@ -111,7 +108,7 @@
     }
 }
 
-// 3 блок с булкой 
+
 .about__Funny {
     padding-top: 150px;
     padding-left: 15px;
