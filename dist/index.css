@@ -34,6 +34,11 @@ figure {
   margin: 0;
 }
 
+hr {
+  margin: 0 0 140px;
+  width: 100%;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -319,6 +324,204 @@ figure {
   .work-section .work__cards-wrapper .card--color,
   .work-section .work__cards-wrapper .card--Dimensions {
     justify-self: center;
+  }
+}
+
+.about__Sonechka-title .about {
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 130px;
+}
+
+.about__Sonechka {
+  width: 100%;
+  height: 500px;
+  padding: 0 0 0 15px;
+  background: url("../img/photo/Komp.webp") 100%/700px no-repeat;
+}
+@media (max-width: 1200px) {
+  .about__Sonechka {
+    background: url("../img/photo/Komp.webp") 110% 35%/550px no-repeat;
+  }
+}
+@media (max-width: 992px) {
+  .about__Sonechka {
+    background: url("../img/photo/Komp.webp") 270px 80%/550px no-repeat;
+  }
+}
+@media (max-width: 768px) {
+  .about__Sonechka {
+    max-width: 100%;
+    background: url("../img/photo/Komp.webp") 260px 70%/450px no-repeat;
+  }
+}
+@media (max-width: 576px) {
+  .about__Sonechka {
+    max-width: 100%;
+    height: 500px;
+    background: url("../img/photo/Komp.webp") 200px 70%/400px no-repeat;
+  }
+}
+
+.about__Sonechka-title {
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .about__Sonechka-title {
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+  }
+}
+
+.about__Sonechka-desc {
+  margin: 10px 0 0 0;
+  max-width: 590px;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .about__Sonechka-desc {
+    max-width: 400px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+  }
+}
+@media (max-width: 576px) {
+  .about__Sonechka-desc {
+    max-width: 320px;
+  }
+}
+
+.about__sports {
+  text-align: right;
+  padding-top: 150px;
+  padding-right: 20px;
+  width: 100%;
+  height: 700px;
+  background: url("../img/photo/Sonya(sports-dog).webp") -5% 20px/680px no-repeat;
+}
+@media (max-width: 1200px) {
+  .about__sports {
+    background: url("../img/photo/Sonya(sports-dog).webp") 15% 20px/650px no-repeat;
+  }
+}
+@media (max-width: 992px) {
+  .about__sports {
+    padding-right: 40px;
+    background: url("../img/photo/Sonya(sports-dog).webp") -10% 20px/550px no-repeat;
+  }
+}
+@media (max-width: 768px) {
+  .about__sports {
+    padding-right: 10px;
+    background: url("../img/photo/Sonya(sports-dog).webp") -10% 180px/450px no-repeat;
+  }
+}
+@media (max-width: 576px) {
+  .about__sports {
+    background: url("../img/photo/Sonya(sports-dog).webp") -10% 240px/400px no-repeat;
+  }
+}
+
+.about__sports-title {
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .about__sports-title {
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+  }
+}
+
+.about__sports-desc {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .about__sports-desc {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+  }
+}
+
+.about__Funny {
+  padding-top: 150px;
+  padding-left: 15px;
+  width: 100%;
+  height: 1000px;
+  background: url("../img/photo/Sonya(funny).webp") 60% 70%/650px no-repeat;
+}
+@media (max-width: 1200px) {
+  .about__Funny {
+    background: url("../img/photo/Sonya(funny).webp") 60% 70%/650px no-repeat;
+  }
+}
+@media (max-width: 992px) {
+  .about__Funny {
+    background: url("../img/photo/Sonya(funny).webp") 60% 70%/550px no-repeat;
+  }
+}
+@media (max-width: 768px) {
+  .about__Funny {
+    background: url("../img/photo/Sonya(funny).webp") 60% 50%/450px no-repeat;
+  }
+}
+@media (max-width: 576px) {
+  .about__Funny {
+    background: url("../img/photo/Sonya(funny).webp") 60% 50%/400px no-repeat;
+  }
+}
+
+.about__Funny-title {
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .about__Funny-title {
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+  }
+}
+
+.about__Funny-desc {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .about__Funny-desc {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
   }
 }
 

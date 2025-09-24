@@ -1,0 +1,153 @@
+// добавляем импорты 4
+@use '1_peremen' as p;
+@use'5_mixins' as m;
+
+.about__Sonechka-title {
+
+    // пишем некст 5
+
+    .about {
+        margin: 0 auto;
+        @include m.d-flex(start, center, nowrap, column, 0, 130px);
+    }
+}
+
+// крч у него возможно неправильно вложенно все, поэтому мы пишем так, потому что иначе у нас не работает 6
+
+.about__Sonechka {
+    width: 100%;
+    height: 500px;
+    padding: 0 0 0 15px;
+    background: url('../img/photo/Komp.webp') 100%/700px no-repeat;
+
+    @media(max-width: p.$media_2) {
+        background: url('../img/photo/Komp.webp') 110% 35%/550px no-repeat;
+    }
+
+    @media(max-width: p.$media_3) {
+        background: url('../img/photo/Komp.webp') 270px 80%/550px no-repeat;
+    }
+
+    @media(max-width: p.$media_4) {
+        max-width: 100%;
+        background: url('../img/photo/Komp.webp') 260px 70% / 450px no-repeat;
+    }
+
+    @media(max-width: p.$media_5) {
+        max-width: 100%;
+        height: 500px;
+        background: url('../img/photo/Komp.webp') 200px 70% / 400px no-repeat;
+    }
+}
+
+// 7 оформляем дальше главный текст 
+.about__Sonechka-title {
+    @include m.font(45px, 400, p.$white-color);
+
+    @media(max-width: p.$media_3) {
+        @include m.font(35px, 400, p.$white-color);
+    }
+}
+
+// 8 оформление p 
+
+.about__Sonechka-desc {
+    margin: 10px 0 0 0;
+    max-width: 590px;
+    @include m.font(20px, 300, p.$white-color);
+
+    @media(max-width: p.$media_3) {
+        max-width: 400px;
+        @include m.font(15px, 300, p.$white-color);
+    }
+
+    @media(max-width: p.$media_5) {
+        max-width: 320px;
+    }
+}
+
+// НЕКСТ БЛОК с соней <33
+
+.about__sports {
+    text-align: right;
+    padding-top: 150px;
+    padding-right: 20px;
+    width: 100%;
+    height: 700px;
+    background: url('../img/photo/Sonya\(sports-dog\).webp') -5% 20px / 680px no-repeat;
+
+    @media(max-width: p.$media_2) {
+        background: url('../img/photo/Sonya\(sports-dog\).webp') 15% 20px/650px no-repeat;
+    }
+
+    @media(max-width: p.$media_3) {
+        padding-right: 40px;
+        background: url('../img/photo/Sonya\(sports-dog\).webp') -10% 20px/550px no-repeat;
+    }
+
+    @media(max-width: p.$media_4) {
+        padding-right: 10px;
+        background: url('../img/photo/Sonya\(sports-dog\).webp') -10% 180px / 450px no-repeat;
+    }
+
+    @media(max-width: p.$media_5) {
+        background: url('../img/photo/Sonya\(sports-dog\).webp') -10% 240px / 400px no-repeat;
+    }
+}
+
+.about__sports-title {
+    @include m.font(45px, 400, p.$white-color);
+
+    @media(max-width: p.$media_3) {
+        @include m.font(35px, 400, p.$white-color);
+    }
+}
+
+.about__sports-desc {
+    @include m.font(20px, 300, p.$white-color);
+
+    @media(max-width: p.$media_3) {
+        @include m.font(15px, 300, p.$white-color);
+    }
+}
+
+// 3 блок с булкой 
+.about__Funny {
+    padding-top: 150px;
+    padding-left: 15px;
+    width: 100%;
+    height: 1000px;
+    background: url('../img/photo/Sonya\(funny\).webp') 60% 70%/650px no-repeat;
+
+    @media(max-width: p.$media_2) {
+        background: url('../img/photo/Sonya\(funny\).webp') 60% 70%/650px no-repeat;
+    }
+
+    @media(max-width: p.$media_3) {
+        background: url('../img/photo/Sonya\(funny\).webp') 60% 70%/550px no-repeat;
+    }
+
+    @media(max-width: p.$media_4) {
+        background: url('../img/photo/Sonya\(funny\).webp') 60% 50% / 450px no-repeat;
+    }
+
+    @media(max-width: p.$media_5) {
+        background: url('../img/photo/Sonya\(funny\).webp') 60% 50%/ 400px no-repeat;
+    }
+}
+
+.about__Funny-title {
+    @include m.font(45px, 400, p.$white-color);
+
+    @media(max-width: p.$media_3) {
+        @include m.font(35px, 400, p.$white-color);
+    }
+}
+
+.about__Funny-desc {
+    @include m.font(20px, 300, p.$white-color);
+
+    @media(max-width: p.$media_3) {
+        @include m.font(15px, 300, p.$white-color);
+    }
+}
