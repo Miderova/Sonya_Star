@@ -218,7 +218,6 @@
       </div>
     </section>
 
-    <!-- Секция для френдов -->
     <section class="friend-section" aria-label="section friend">
       <div class="container">
         <div class="friend">
@@ -237,7 +236,6 @@
               </blockquote>
             </figure>
 
-            <!-- стрелки для скрола друзей -->
             <button class="slider__left-btn">
               <svg class="slider__left-btn__icon" aria-label="arrow--icon">
                 <use href="img/sprites.svg#arrow-icon"></use>
@@ -250,7 +248,6 @@
               </svg>
             </button>
 
-            <!-- Точки -->
             <div class="slider__points">
               <div class="slider__points-item"></div>
               <div class="slider__points-item"></div>
@@ -262,6 +259,32 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Форма  -->
+    <section class="form-section" aria-label="section form">
+      <div class="container">
+        <div class="form-section__wrapper">
+
+          <!-- сама заявка на форму -->
+          <form action="mailto:slarkmidd@mail.ru" class="form" aria-labelledby="form-title">
+
+            <label for="input-name" id="form__name" class="form__title">Do you want to chat with Sonya?</label>
+            <input id="input-name" type="text" placeholder="Name" class="form__name" aria-required="true" required>
+
+            <input id="input-email" type="email" placeholder="Email" class="form__email" aria-required="true" required>
+
+            <input id="input-text" type="text" placeholder="What do you want to talk about?" class="form__text"
+              aria-required="true" required>
+
+            <!-- Конпку делаем -->
+            <button type="submit" class="form__submit-btn">Send</button>
+          </form>
+        </div>
+      </div>
+      <!-- Добавляем облака ОНИ НЕ ДОЛЖНЫ БЫТЬ В КОНТЕЙНЕРЕ ИНАЧЕ ТЫ ИХ НЕ СМОЖЕШЬ РАСПОЛОЖИТЬ -->
+      <div class="form-section__bg-cloud cloud--left"></div>
+      <div class="form-section__bg-cloud cloud-right"></div>
     </section>
   </main>
 </body>
