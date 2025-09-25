@@ -1,0 +1,104 @@
+@use '1_peremen' as p;
+@use'5_mixins' as m;
+@use 'sass:color';
+
+// делаем плейсхолдер
+%cloud-template {
+    width: 700px;
+    height: 240px;
+    background: url('../img/photo/облако1.png') center/contain no-repeat;
+}
+
+// плейсхолдер, чтобы поля выглядели адекватно
+%imput-template {
+    width: 100%;
+    height: 47px;
+    border-radius: 20px;
+    border: 1px solid p.$blue_s-color;
+    padding: 0 1em;
+    @include m.font(25px, 400, p.$black-color);
+
+    &::placeholder {
+        @include m.font(25px, 100, p.$blue_s-color);
+    }
+}
+
+%media-input {
+    &::placeholder {
+        @include m.font(25px, 100, p.$blue_s-color);
+    }
+}
+
+
+.form-section {
+    // добавила высоту, чтобы облако сделать пониже
+    height: 870px;
+    padding: 180px 15px;
+    position: relative;
+    overflow: hidden;
+
+    &__bg-cloud {
+        @extend %cloud-template;
+    }
+
+    .cloud--left {
+        @include m.position(absolute, 1, -1, top, left, 0, -400px);
+    }
+
+    .cloud-right {
+        @include m.position(absolute, 1, -1, bottom, right, 0, -210px);
+    }
+
+    &__wrapper {
+        width: 100%;
+        height: 360px;
+        margin: 0 auto;
+        @include m.d-flex(center, center, nowrap, row, 0, 0);
+    }
+}
+
+.form {
+    width: min(625px, 100%);
+    @include m.d-flex(center, center, nowrap, column, 0, 23px);
+
+    &__title {
+        @include m.font (40px, 400, p.$black-color);
+    }
+
+    &__name,
+    &__email,
+    &__text {
+        @extend %imput-template;
+    }
+
+    &__submit-btn {
+        width: 100%;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        @include m.font(25px, 500, p.$white-color);
+        background-color: p.$black-color;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    @media(max-width:p.$media_4) {
+
+        &__title {
+            @include m.font (32px, 400, p.$black-color);
+        }
+
+        &__name,
+        &__email,
+        &__text {
+            @include m.font(15px, 400, p.$blue_s-color);
+
+            &::placeholder {
+                @include m.font(18px, 100, p.$blue_s-color);
+            }
+        }
+    }
+}
