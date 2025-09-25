@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .info-card {
   width: 180px;
   height: 205px;
@@ -133,6 +134,50 @@
 @media (max-width: 375px) {
   .img-card {
     width: 300px;
+  }
+}
+
+.wave-card {
+  width: 500px;
+  height: 275px;
+  background: url("../img/photo/фониконки.png") center/cover no-repeat;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 20px;
+}
+.wave-card__avatar {
+  margin: 30px 0 0 30px;
+  border-radius: 50px;
+}
+.wave-card__quote {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  margin: 30px;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .wave-card {
+    width: 330px;
+    row-gap: 5px;
+    background: url("../img/photo/фониконки.png") 50%/contain no-repeat;
+  }
+  .wave-card__avatar {
+    width: 40px;
+    margin: 60px 0 0 21px;
+    border-radius: 50px;
+  }
+  .wave-card__quote {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    margin-top: 0;
   }
 }
 
