@@ -26,18 +26,18 @@
         <div class="nav__links">
           <ul class="nav__links-list list" aria-label="navigation list">
             <li class="list__item" aria-label="first link">
-              <a href="#" class="list__item-link">about us</a>
+              <a href="#aboutSonya" class="list__item-link">about us</a>
             </li>
             <li class="list__item" aria-label="second link">
-              <a href="#" class="list__item-link">contact</a>
+              <a href="#contactsID" class="list__item-link">contact</a>
             </li>
           </ul>
         </div>
         <div class="nav__beagle-wrapper beagle">
-          <a href="#" class="beagle__link" aria-label="about the beagle">ABOUT THE BEAGLE</a>
+          <a href="#beagle" class="beagle__link" aria-label="about the beagle">ABOUT THE BEAGLE</a>
         </div>
 
-        <div class="nav__beagle-wrapper dog">
+        <div class="nav__dog-wrapper dog">
           <a href="#" class="dog__link" aria-label="dog info">
             <svg class="dog__link-icon">
               <use href="img/sprites.svg#dog-icon"></use>
@@ -47,6 +47,44 @@
       </nav>
     </div>
   </header>
+
+  <!-- Mob-menu -->
+<div class="mobile-navigation">
+  <label for="checkboxID" class="mobile-navigation__burger">
+      <svg class="mobile-navigation__burger-icon">
+        <use href="img/sprites.svg#burger"></use>
+      </svg>
+    </label>
+
+    <input type="checkbox" id="checkboxID" class="mobile-navigation__toggler"> 
+
+    
+    <nav class="mobile-navigation__menu nav">
+      <ul class="nav__list">
+
+        <li class="nav__list-item">
+          <a href="#aboutSonya" class="nav__list-item-link">About us</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#contactsID" class="nav__list-item-link">Contact</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#chatSonya" class="nav__list-item-link">Chat with Sonya</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#Morecontent" class="nav__list-item-link">More content</a>
+        </li>
+      </ul>
+
+      <label for="checkboxID" class="mobile-navigation__cross">
+        <svg class="mobile-navigation__cross-icon">
+          <use href="img/sprites.svg#cross"></use>
+        </svg>
+      </label>
+<!-- Cтили делаем в header -->
+    </nav>
+
+</div>
 
   <main aria-label="main content">
     <section class="hero-section" aria-label="hero section">
@@ -71,7 +109,7 @@
       </div>
     </section>
 
-    <section class="work-section">
+    <section class="work-section" id="aboutSonya">
       <div class="container">
         <div class="work">
           <h2 class="work-section__title">Important to know</h2>
@@ -139,7 +177,7 @@
 
     <hr class="divieder" />
 
-    <section class="about-section">
+    <section class="about-section" id="beagle">
       <div class="container">
         <div class="about">
           <div class="about__Sonechka">
@@ -174,7 +212,7 @@
     <hr />
 
 
-    <section class="morecontent-section" aria-label="More content">
+    <section class="morecontent-section" aria-label="More content" id="Morecontent">
       <div class="container">
         <div class="morecontent">
           <h2 class="morecontent__title">More content</h2>
@@ -229,9 +267,7 @@
 
               <blockquote class="wave-card__quote" cite="https://kadikama.com">
                 <p>
-                  Соня — супер-пупер! Ставлю лайки на все её фото, а в ответ получаю аниме-мемы (наверное, это её способ
-                  сказать «привет»). Мы странные друзья, но это точно дружба! Ну, я так думаю... p.s. Твой анимешник
-                  LEO.
+                  Мяу-мяу мяу!!! мяу... мяу мяу!!! мяяяяяяяяяяу! <br>мимими мяу мяу! Мяу-мяу мяу :)  мяу... мяу мяу! мяяяяяяяяяяу! мимими мяу мяу! <br> МЯУ!!! мя мя мяу
                 </p>
               </blockquote>
             </figure>
@@ -262,7 +298,7 @@
     </section>
 
 
-    <section class="form-section" aria-label="section form">
+    <section class="form-section" aria-label="section form" id="chatSonya">
       <div class="container">
         <div class="form-section__wrapper">
 
@@ -288,7 +324,7 @@
   </main>
 
   <!-- Подвал -->
-  <footer class="contacts-section" aria-label="contacts-section">
+  <footer class="contacts-section" aria-label="contacts-section" id="contactsID">
     <div class="container">
       <div class="footer">
         <div class="footer__terms">
@@ -299,17 +335,17 @@
           <div class="footer__terms-rights">© Sonya Star 2025. All Rights Reserved.</div>
         </div>
         <address class="footer__terms__contacts">
-          <a href="#" target="_blank" >
+          <a href="#" target="_blank">
             <svg class="footer__terms-icon" aria-label="footer contacts">
               <use href="img/sprites.svg#discord"></use>
             </svg>
           </a>
-          <a href="#" target="_blank">
+          <a href="https://vk.com/slarrrk" target="_blank">
             <svg class="footer__terms-icon" aria-label="footer contacts">
               <use href="img/sprites.svg#vk"></use>
             </svg>
           </a>
-          <a href="#" target="_blank">
+          <a href="https://t.me/qqjok" target="_blank">
             <svg class="footer__terms-icon" aria-label="footer contacts">
               <use href="img/sprites.svg#telegram"></use>
             </svg>

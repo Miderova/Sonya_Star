@@ -109,7 +109,7 @@
             }
               @media(max-width:p.$media_5) {
                 width: 150px;
-                @include m.position(absolute, 1, -1, top, left, -24px, -60px);
+                @include m.position(absolute, 1, -1, top, left, -180px, -20px);
             }
         }
 
