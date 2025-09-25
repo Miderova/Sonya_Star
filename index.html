@@ -261,12 +261,12 @@
       </div>
     </section>
 
-    <!-- Форма  -->
+
     <section class="form-section" aria-label="section form">
       <div class="container">
         <div class="form-section__wrapper">
 
-          <!-- сама заявка на форму -->
+
           <form action="mailto:slarkmidd@mail.ru" class="form" aria-labelledby="form-title">
 
             <label for="input-name" id="form__name" class="form__title">Do you want to chat with Sonya?</label>
@@ -277,16 +277,47 @@
             <input id="input-text" type="text" placeholder="What do you want to talk about?" class="form__text"
               aria-required="true" required>
 
-            <!-- Конпку делаем -->
             <button type="submit" class="form__submit-btn">Send</button>
           </form>
         </div>
       </div>
-      <!-- Добавляем облака ОНИ НЕ ДОЛЖНЫ БЫТЬ В КОНТЕЙНЕРЕ ИНАЧЕ ТЫ ИХ НЕ СМОЖЕШЬ РАСПОЛОЖИТЬ -->
+
       <div class="form-section__bg-cloud cloud--left"></div>
       <div class="form-section__bg-cloud cloud-right"></div>
     </section>
   </main>
+
+  <!-- Подвал -->
+  <footer class="contacts-section" aria-label="contacts-section">
+    <div class="container">
+      <div class="footer">
+        <div class="footer__terms">
+          <div class="footer__terms__links">
+            <a href="#" class="footer__terms-link">Terms of Use</a>
+            <a href="#" class="footer__terms-link">Privacy Policy</a>
+          </div>
+          <div class="footer__terms-rights">© Sonya Star 2025. All Rights Reserved.</div>
+        </div>
+        <address class="footer__terms__contacts">
+          <a href="#" target="_blank" >
+            <svg class="footer__terms-icon" aria-label="footer contacts">
+              <use href="img/sprites.svg#discord"></use>
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg class="footer__terms-icon" aria-label="footer contacts">
+              <use href="img/sprites.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg class="footer__terms-icon" aria-label="footer contacts">
+              <use href="img/sprites.svg#telegram"></use>
+            </svg>
+          </a>
+        </address>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
